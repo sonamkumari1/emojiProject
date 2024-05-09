@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+:root {
+    --black: #f5f2f2;
+    --white: #131212;
+    --gray: #333333;
+}
+
+body,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    margin-left: 350px;
+    color: #333333;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.container {
+    padding: 1rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+#search {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 380px;
+    font-size: 120%;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+#search1 {
+    background-color: #92aca9;
+    padding: 15px;
+    font-size: 120%;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--black);
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    background: radial-gradient(#e5eeeb, #bbcecc);
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    padding: 1rem;
+    width: calc(23.333% - 1rem);
+    box-sizing: border-box;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+/* Styles for emoji, aliases, and description within the card */
+.card .emoji {
+    margin-left: 5.5rem;
+    margin-bottom: 1rem;
+    font-size: 250%;
+}
+
+.card .aliases {
+    text-transform: capitalize;
+    font-size: 110%;
+}
+
+.card .desc {
+    font-size: 110%;
+}
